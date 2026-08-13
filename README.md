@@ -24,3 +24,38 @@
 
 &nbsp;
 
+### Array com const:
+### const carros = ["Saab", "Volvo", "BMW"];
+### carros[0] = "Toyota";     // ✅ Permitido (modifica o conteúdo)
+### carros.push("Audi");      // ✅ Permitido (adiciona elemento)
+### carros = ["Fiat", "VW"];  // ❌ ERRO! (reatribuição da variável)
+
+&nbsp;
+
+### Objeto com const:
+### javascript
+### const pessoa = { nome: "João", idade: 30 };
+### pessoa.nome = "Maria";    // ✅ Permitido (modifica propriedade)
+### pessoa.cidade = "SP";     // ✅ Permitido (adiciona propriedade)
+### pessoa = {};              // ❌ ERRO! (reatribuição da variável)
+
+&nbsp;
+
+### Função com const:
+### javascript
+### const somar = function(a, b) {
+ ###    return a + b;
+### };
+### somar(2, 3);              // ✅ Funciona normalmente
+### somar = function() {};    // ❌ ERRO! (reatribuição)
+
+&nbsp;
+
+### RegExp com const:
+### javascript
+### const regex = /[a-z]+/;
+### regex.test("abc");        // ✅ Funciona normalmente
+### regex = /[0-9]+/;         // ❌ ERRO! (reatribuição)
+
+&nbsp;
+
